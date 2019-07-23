@@ -147,7 +147,7 @@ Compression ratio (higher is better): 1.73494
 There is a line that might look unfamiliar to you:
 
 ```
-typedef priority_queue<freq_info*, vector<freq_info*>, freq_info> tree_queue;
+typedef priority_queue<shared_ptr<freq_info>, vector<shared_ptr<freq_info>>, freq_info> tree_queue;
 ```
 
 This is called a typedef, and it is used to say "the thing on the left
