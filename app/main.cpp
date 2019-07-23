@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../code/Hash.h"
+#include "../code/Huffman.h"
 
 using namespace std;
 
