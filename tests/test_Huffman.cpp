@@ -59,7 +59,7 @@ protected:
 };
 
 double test_Huffman::total_grade = 0;
-double test_Huffman::max_grade = 100;
+double test_Huffman::max_grade = 195;
 
 
 // forward declaration of helpers
@@ -266,9 +266,9 @@ TEST_F(test_Huffman, DecodeString){
 }
 
 TEST_F(test_Huffman, FullCircuitMicroFile){
-  fullCircuitFile("micro.txt", "tax does good, all to lists!!", 115);
-  fullCircuitFile("small.txt", "a minute phrase", 67);
-  fullCircuitFile("pkd.txt", "These pretzels are making me thirsty", 166);
+  fullCircuitFile("../tests/micro.txt", "tax does good, all to lists!!", 115);
+  fullCircuitFile("../tests/small.txt", "a minute phrase", 67);
+  fullCircuitFile("../tests/pkd.txt", "These pretzels are making me thirsty", 166);
 }
 
 // Helper functions down here. Take a look.
