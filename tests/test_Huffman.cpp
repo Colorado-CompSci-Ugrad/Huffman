@@ -266,8 +266,8 @@ TEST_F(test_Huffman, DecodeString){
 }
 
 TEST_F(test_Huffman, FullCircuitMicroFile){
-  fullCircuitFile("../tests/micro.txt", "tax does good, all to lists!!", 115);
-  fullCircuitFile("../tests/small.txt", "a minute phrase", 67);
+  fullCircuitFile("../tests/micro.txt", "tax does good, all to lists!!", 113);
+  fullCircuitFile("../tests/small.txt", "a minute phrase", 68);
   fullCircuitFile("../tests/pkd.txt", "These pretzels are making me thirsty", 166);
 }
 
