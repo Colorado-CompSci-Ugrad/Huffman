@@ -9,6 +9,7 @@
 #include <string>
 #include <math.h>
 #include <ctime>
+#include <cmath>
 
 using namespace std;
 
