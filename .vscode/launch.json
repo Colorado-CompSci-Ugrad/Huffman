@@ -15,7 +15,6 @@
             "cwd": "${workspaceFolder}/build",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -23,7 +22,16 @@
                     "ignoreFailures": false
                 }
             ],
-            "miDebuggerPath": "/usr/bin/gdb"
+            "launchCompleteCommand": "exec-run",
+            "linux": {
+                "targetArchitecture": "x64",
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/gdb"
+            },
+            "osx": {
+                "targetArchitecture": "arm64",
+                "MIMode": "lldb"
+            }
         },
         {
             "name": "Run App",
@@ -36,7 +44,6 @@
             "cwd": "${workspaceFolder}/build",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -44,7 +51,16 @@
                     "ignoreFailures": false
                 }
             ],
-            "miDebuggerPath": "/usr/bin/gdb"
+            "launchCompleteCommand": "exec-run",
+            "linux": {
+                "targetArchitecture": "x64",
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/gdb"
+            },
+            "osx": {
+                "targetArchitecture": "arm64",
+                "MIMode": "lldb"
+            }
         }
     ]
 }
